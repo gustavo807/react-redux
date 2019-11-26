@@ -1,1 +1,7 @@
 export const ADD_TODO = 'ADD_TODO'
+
+
+
+export const FETCH_POSTS_START = 'FETCH_POSTS_START'
+export const FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS'
+export const FETCH_POSTS_FAIL = 'FETCH_POSTS_FAIL'

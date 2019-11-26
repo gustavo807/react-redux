@@ -5,12 +5,11 @@ const initialState = {
         {id: 1, title: 'angular'},
         {id: 2, title: 'react'},
         {id: 3, title: 'vue'},
-    ],
-    items: []
+    ]
 }
 
 export default function(state = initialState, action){
-    console.log('reducer', action.payload)
+    console.log('reducer', action.type,  action.payload)
     switch(action.type){
         case ADD_TODO:
             return {

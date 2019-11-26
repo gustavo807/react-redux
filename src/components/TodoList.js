@@ -9,7 +9,7 @@ function TodoList({todos, addTodo, newTodo}){
             TodoList
             <input type="text" value={data} onChange={(e)=>setData(e.target.value)} />
             <button onClick={()=>addTodo({title: data})} >AddTodo</button>
-            <button onClick={()=>newTodo("hello")} >New Todo</button>
+            <button onClick={newTodo} >New Todo</button>
             <hr />
             <p>{JSON.stringify(todos, 2)}</p>
         </div>

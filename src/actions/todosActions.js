@@ -10,9 +10,13 @@ export const addTodo = content => ({
 
 
 export const newTodo = () => dispatch => {
-    console.log('new todo')
-    let content = {
-        title: "newTodo"
-    }
-    //dispatch(addTodo(content))
+
+
+    dispatch({
+        type: ADD_TODO,
+        payload: {
+            id: new Date().getTime(),
+            title: "from Dispatch"
+        }
+    })
 }
